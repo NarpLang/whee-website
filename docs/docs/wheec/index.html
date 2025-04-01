@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whee</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="navbar" style="display: flex; gap: 20px;">
+        <a href="/"><img src="https://raw.githubusercontent.com/NarpLang/whee/main/public/images/logo.png" alt="Whee Logo"></a>
+        <h2><a href="/docs">Documentation</a></h2>
+        <h2><a href="/download">Download</a></h2>
+        <h2><a href="https://github.com/NarpLang/whee">GitHub</a></h2>
+    </div>
+    <div class="content">
+    <h1>WheeC and The WheeC Engine</h1>
+    <h2>Understanding WheeC</h2>
+    <p>WheeC is a process of turning Whee code to C code.</p>
+    <p>Then, the C code gets executed.</p>
+    <p>This will allow users to easily modify the code while being blazingly fast.</p>
+    <h2>The WheeC Engine</h2>
+    <p>A WheeC Engine will do what WheeC needs to do: Turn Whee to C.</p>
+    <p>The default WheeC Engine that comes with Whee is whee-to-c.</p>
+    <p>You can try it any time by running:</p>
+    <code>whee-to-c [script].whee</code>
+    <p>Which will output the C code with the top line being "=== Generated C Code ===" to ensure that it is a valid WheeC Engine.</p>
+    <p>You can try modifying it's code by putting a file wheeinit/required.c</p>
+    <p>You can also try adding wheeinit/optional.c if isn't essential</p>
+    <p>Modules will use wheeinit/modules/[module]/[optional/required].c</p>
+    </div>
+</body>
+</html>
